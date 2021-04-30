@@ -16,3 +16,7 @@ if __name__ == '__main__':
     print(iris.idade)
     for filho in iris.filhos:
         print(filho.nome)
+    iris.sobrenome = 'Fidelis'
+    del iris.filhos
+    print(iris.__dict__)
+    print(geilson.__dict__)
