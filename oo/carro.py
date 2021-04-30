@@ -35,7 +35,7 @@ O       L
     3
     >>> motor.frear()
     >>> motor.velocidade
-    0
+    1
     >>> # Testando direção
     >>> direcao = Direcao()
     >>> diracao.valor
@@ -91,3 +91,9 @@ O       L
 class Motor:
     def __init__(self):
         self.velocidade = 0
+    def acelerar(self):
+        self.velocidade += 1
+
+    def frear(self):
+        self.velocidade -= 2
+        self.velocidade = max(0, self.velocidade)
