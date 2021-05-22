@@ -28,7 +28,6 @@ class Fase():
     def __init__(self, intervalo_de_colisao=1):
         """
         Método que inicializa uma fase.
-
         :param intervalo_de_colisao:
         """
         self.intervalo_de_colisao = intervalo_de_colisao
